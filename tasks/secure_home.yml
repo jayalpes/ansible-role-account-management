@@ -37,3 +37,4 @@
   when:
     - "account_management_users"
     - "(item.0.state | default('present')) == 'present'"
+  ignore_errors: "{{ ansible_check_mode }}"
